@@ -1,6 +1,3 @@
-/* ===========================================
-   GLOBAL BASE STYLES (LAYOUT UNTOUCHED)
-=========================================== */
 
 body {
     font-family: "Poppins", sans-serif;
@@ -14,19 +11,16 @@ section {
     padding: 80px 0;
 }
 
-/* Light mode section backgrounds */
+
 section {
     background-color: #F9F5F2;
 }
 
-/* Dark mode section backgrounds (FIX) */
+
 .dark-mode section {
     background-color: #1F1816 !important;
 }
 
-/* =====================================================
-   NAVBAR (layout unchanged — only colours updated)
-===================================================== */
 
 .navbar {
     background-color: #E8D6CC !important; /* nude beige */
@@ -47,7 +41,6 @@ section {
     color: #5A4A42 !important;
 }
 
-/* Prevent navbar covering hero */
 #hero {
     padding-top: 140px !important;
 }
@@ -62,9 +55,6 @@ section {
     color: #F2E8E5 !important;
 }
 
-/* ===========================================
-   PROFILE IMAGE (NO LAYOUT CHANGES)
-=========================================== */
 
 .profile-img {
     width: 170px;
@@ -74,9 +64,7 @@ section {
     border: 4px solid #E2B8B3;
 }
 
-/* ===========================================
-   HEADINGS
-=========================================== */
+
 
 h1, h2, h3, h4 {
     color: #3A2F2B;
@@ -90,9 +78,7 @@ h1, h2, h3, h4 {
     color: #F2E8E5 !important;
 }
 
-/* ===========================================
-   ABOUT ME SECTION — readable fix
-=========================================== */
+
 
 #about p {
     color: #4A3D36;
@@ -103,9 +89,6 @@ h1, h2, h3, h4 {
     color: #F2E8E5 !important;
 }
 
-/* ===========================================
-   CARDS (Education, Projects, Work)
-=========================================== */
 
 .card {
     background-color: #FFFFFF;
@@ -120,9 +103,7 @@ h1, h2, h3, h4 {
     color: #F2E8E5 !important;
 }
 
-/* ===========================================
-   TIMELINE
-=========================================== */
+
 
 .timeline-item {
     border-left: 4px solid #C8A18E;
@@ -133,9 +114,6 @@ h1, h2, h3, h4 {
     border-left: 4px solid #C49A95 !important;
 }
 
-/* ===========================================
-   PROGRESS BARS
-=========================================== */
 
 .progress {
     background-color: #E3D4CC !important;
@@ -154,9 +132,6 @@ h1, h2, h3, h4 {
     background-color: #C49A95 !important;
 }
 
-/* ===========================================
-   WORK LOGOS
-=========================================== */
 
 .work-logo {
     width: 60px;
@@ -164,9 +139,7 @@ h1, h2, h3, h4 {
     object-fit: contain;
 }
 
-/* ===========================================
-   FILTER BUTTONS
-=========================================== */
+
 
 .filter-btn {
     background: #E2B8B3;
@@ -192,9 +165,7 @@ h1, h2, h3, h4 {
     color: #1F1816 !important;
 }
 
-/* ===========================================
-   DARK MODE FULL THEME
-=========================================== */
+
 
 .dark-mode {
     background-color: #1F1816 !important; /* dark nude */
@@ -205,9 +176,7 @@ h1, h2, h3, h4 {
     color: #F2E8E5 !important;
 }
 
-/* ===========================================
-   HERO SUBTITLE (Final Year Computing...)
-=========================================== */
+
 
 .hero-subtitle {
     color: #6A5C55 !important;
@@ -218,9 +187,7 @@ h1, h2, h3, h4 {
     color: #EADBD6 !important;
 }
 
-/* ===========================================
-   SECTION TITLES — visibility fix
-=========================================== */
+
 
 section h2, 
 .section-title {
@@ -233,9 +200,7 @@ section h2,
     color: #F3E8E4 !important;
 }
 
-/* =====================================================
-   CONTACT MODAL — FULL FIX (READABLE IN BOTH MODES)
-===================================================== */
+
 
 .modal-content {
     background-color: #ffffff !important;
