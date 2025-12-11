@@ -1,0 +1,71 @@
+/* GLOBAL */
+body {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #111, #222);
+    color: white;
+}
+
+.profile-img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
+
+/* TIMELINE */
+.timeline-item {
+    border-left: 4px solid #000;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.dark-mode .timeline-item {
+    border-left: 4px solid #fff;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background-color: #121212;
+    color: #dcdcdc;
+}
+
+.dark-mode .card {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.dark-mode .navbar {
+    background-color: #000 !important;
+}
+
+.dark-mode .progress-bar {
+    background-color: #444 !important;
+}
+
+/* FILTER BUTTONS */
+.filter-btn.active {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.work-logo {
+    width: 60px;     
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+
