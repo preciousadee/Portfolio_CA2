@@ -1,45 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Deliverables</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Your Nude Theme CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<section>
-    <h1>Project Deliverables</h1>
-    <p>This page outlines the Bootstrap components and dynamic features included in my portfolio website, as required for the CA2 submission.</p>
+<!-- ============================
+     NAVBAR (same as index.html)
+============================ -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Precious Ade Portfolio</a>
 
-    <h2>1. Bootstrap Components Used</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+              
+                        
+                <li class="nav-item"><a class="nav-link" href="deliverables.html">Deliverables</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+
+                <!-- NEW PAGE -->
+                <li class="nav-item">
+                    <a class="nav-link" href="deliverables.html">Deliverables</a>
+                </li>
+
+                <!-- Dark Mode Toggle -->
+                <li class="nav-item ms-3">
+                    <button id="themeToggle" class="btn btn-outline-light">🌙</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Add spacing under fixed navbar -->
+<div style="height:120px;"></div>
+
+<!-- ============================
+     CONTENT SECTION
+============================ -->
+<section class="container">
+    <h1 class="section-title">Project Deliverables</h1>
+    <p>This page outlines the Bootstrap components and dynamic features included in my portfolio website.</p>
+
+    <h2 class="section-title">1. Bootstrap Components Used</h2>
     <ul>
-        <li><strong>Bootstrap Navbar:</strong> Used for the top navigation menu.</li>
-        <li><strong>Bootstrap Grid System:</strong> Used for responsive layout throughout the website.</li>
-        <li><strong>Cards:</strong> Used for Projects, Education and Experience sections.</li>
-        <li><strong>Progress Bars:</strong> Used in the Skills section to visually show skill proficiency.</li>
-        <li><strong>Buttons:</strong> Used for navigation, project filtering, and opening the contact modal.</li>
-        <li><strong>Modal Window:</strong> Bootstrap modal used for Contact Information pop-up.</li>
-        <li><strong>Responsive Images:</strong> Profile image and work logos using Bootstrap classes.</li>
+        <li><strong>Bootstrap Navbar</strong> – responsive navigation bar.</li>
+        <li><strong>Bootstrap Grid System</strong> – used for layout across all sections.</li>
+        <li><strong>Cards</strong> – for education, projects, and experience.</li>
+        <li><strong>Progress Bars</strong> – in the Skills section.</li>
+        <li><strong>Buttons</strong> – used across the website.</li>
+        <li><strong>Modal</strong> – contact popup window.</li>
+        <li><strong>Responsive Images</strong> – profile image + company logos.</li>
     </ul>
 
-    <h2>2. Dynamic Features Added (JavaScript)</h2>
+    <h2 class="section-title">2. Dynamic JavaScript Features</h2>
     <ul>
-        <li><strong>Dark Mode Toggle:</strong> Allows the user to switch between light and dark themes.</li>
-        <li><strong>Project Filter System:</strong> Filters the project cards by category using buttons.</li>
-        <li><strong>Dynamic Greeting Message:</strong> Automatically updates greeting depending on time of day.</li>
-        <li><strong>Smooth Section Scrolling:</strong> Enhances user experience when navigating the page.</li>
-        <li><strong>Modal Trigger & Close Behaviour:</strong> Contact information opens in a pop-up modal.</li>
-        <li><strong>Active Navigation Highlight:</strong> JS highlights the current section in the navbar.</li>
+        <li><strong>Dark Mode Toggle</strong> – user can change theme.</li>
+        <li><strong>Project Filtering System</strong> – filters project cards dynamically.</li>
+        <li><strong>Dynamic Greeting Message</strong> – depends on time of day.</li>
+        <li><strong>Smooth Scrolling</strong> – enhanced user navigation.</li>
+        <li><strong>Modal Trigger Logic</strong> – opens & closes contact popup.</li>
+        <li><strong>Active Navbar Highlight</strong> – JS keeps track of current section.</li>
     </ul>
 
-    <h2>3. Website Hosting URL</h2>
+    <h2 class="section-title">3. Website Hosting URL</h2>
     <p>
-        My website is hosted on GitHub Pages at the following link:<br>
+        My website is hosted at:<br><br>
         <a href="https://preciousadee.github.io/Portfolio_CA2/" target="_blank">
             https://preciousadee.github.io/Portfolio_CA2/
         </a>
     </p>
 </section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Same dark mode JS as index -->
+<script>
+    const toggleBtn = document.getElementById("themeToggle");
+    toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+    });
+</script>
 
 </body>
 </html>
