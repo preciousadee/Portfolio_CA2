@@ -14,6 +14,16 @@ section {
     padding: 80px 0;
 }
 
+/* Light mode section backgrounds */
+section {
+    background-color: #F9F5F2;
+}
+
+/* Dark mode section backgrounds (FIX) */
+.dark-mode section {
+    background-color: #1F1816 !important;
+}
+
 /* =====================================================
    NAVBAR (layout unchanged — only colours updated)
 ===================================================== */
@@ -42,8 +52,18 @@ section {
     padding-top: 140px !important;
 }
 
+/* DARK MODE NAVBAR */
+.dark-mode .navbar {
+    background-color: #2C2321 !important;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+    color: #F2E8E5 !important;
+}
+
 /* ===========================================
-   PROFILE IMAGE (DO NOT CHANGE LAYOUT)
+   PROFILE IMAGE (NO LAYOUT CHANGES)
 =========================================== */
 
 .profile-img {
@@ -63,25 +83,22 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
-/* ===========================================
-   ABOUT ME SECTION (READABLE IN DARK MODE)
-=========================================== */
-
-#about {
-    background-color: #F9F5F2;
+.dark-mode h1, 
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4 {
+    color: #F2E8E5 !important;
 }
+
+/* ===========================================
+   ABOUT ME SECTION — readable fix
+=========================================== */
 
 #about p {
     color: #4A3D36;
     font-size: 1.1rem;
 }
 
-/* DARK MODE ABOUT ME FIX */
-.dark-mode #about {
-    background-color: #1F1816 !important;
-}
-
-.dark-mode #about h2,
 .dark-mode #about p {
     color: #F2E8E5 !important;
 }
@@ -129,7 +146,6 @@ h1, h2, h3, h4 {
     background-color: #C8A18E !important;
 }
 
-/* DARK MODE PROGRESS BARS */
 .dark-mode .progress {
     background-color: #3A2E2B !important;
 }
@@ -139,7 +155,7 @@ h1, h2, h3, h4 {
 }
 
 /* ===========================================
-   WORK LOGOS (unchanged layout)
+   WORK LOGOS
 =========================================== */
 
 .work-logo {
@@ -149,7 +165,7 @@ h1, h2, h3, h4 {
 }
 
 /* ===========================================
-   FILTER BUTTONS (Projects)
+   FILTER BUTTONS
 =========================================== */
 
 .filter-btn {
@@ -166,7 +182,6 @@ h1, h2, h3, h4 {
     color: white !important;
 }
 
-/* DARK MODE FILTER BUTTONS */
 .dark-mode .filter-btn {
     background: #2C2321 !important;
     color: #F2E8E5 !important;
@@ -186,62 +201,66 @@ h1, h2, h3, h4 {
     color: #F2E8E5 !important;
 }
 
-.dark-mode h1, 
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4 {
-    color: #F2E8E5 !important;
-}
-
 .dark-mode p {
     color: #F2E8E5 !important;
 }
 
-/* DARK MODE NAVBAR */
-.dark-mode .navbar {
-    background-color: #2C2321 !important;
-}
-
-.dark-mode .navbar-brand,
-.dark-mode .nav-link {
-    color: #F2E8E5 !important;
-}
-
 /* ===========================================
-   FOOTER
+   HERO SUBTITLE (Final Year Computing...)
 =========================================== */
 
-footer {
-    background-color: #E8D6CC;
-    text-align: center;
-    padding: 15px 0;
-}
-
-.dark-mode footer {
-    background-color: #2C2321;
-    color: #F2E8E5;
-}
-
-/* HERO SUBTITLE (Final Year Computing...) */
 .hero-subtitle {
-    color: #6A5C55 !important;   /* darker nude-brown for readability */
+    color: #6A5C55 !important;
     font-weight: 500;
 }
 
-/* DARK MODE FIX */
 .dark-mode .hero-subtitle {
-    color: #EADBD6 !important;  /* soft light nude in dark mode */
+    color: #EADBD6 !important;
 }
 
-/* SECTION TITLES — FIX VISIBILITY */
+/* ===========================================
+   SECTION TITLES — visibility fix
+=========================================== */
+
 section h2, 
 .section-title {
-    color: #5A4A42 !important;   /* medium nude-brown for readability */
+    color: #5A4A42 !important;
     font-weight: 700;
 }
 
-/* DARK MODE SECTION TITLES */
 .dark-mode section h2,
 .dark-mode .section-title {
-    color: #F3E8E4 !important;   /* soft light nude for dark backgrounds */
+    color: #F3E8E4 !important;
+}
+
+/* =====================================================
+   CONTACT MODAL — FULL FIX (READABLE IN BOTH MODES)
+===================================================== */
+
+.modal-content {
+    background-color: #ffffff !important;
+    color: #5A4A42 !important;
+    border-radius: 12px;
+}
+
+.modal-content a {
+    color: #7A6256 !important;
+}
+
+.dark-mode .modal-content {
+    background-color: #2E2725 !important;
+    color: #F3E8E4 !important;
+}
+
+.dark-mode .modal-content a {
+    color: #F7D8CF !important;
+}
+
+.dark-mode .modal-header,
+.dark-mode .modal-footer {
+    border-color: #5A4A42 !important;
+}
+
+.dark-mode .close {
+    color: #F3E8E4 !important;
 }
