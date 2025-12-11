@@ -232,3 +232,16 @@ footer {
 .dark-mode .hero-subtitle {
     color: #EADBD6 !important;  /* soft light nude in dark mode */
 }
+
+/* SECTION TITLES — FIX VISIBILITY */
+section h2, 
+.section-title {
+    color: #5A4A42 !important;   /* medium nude-brown for readability */
+    font-weight: 700;
+}
+
+/* DARK MODE SECTION TITLES */
+.dark-mode section h2,
+.dark-mode .section-title {
+    color: #F3E8E4 !important;   /* soft light nude for dark backgrounds */
+}
